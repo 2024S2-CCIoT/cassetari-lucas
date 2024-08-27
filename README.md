@@ -49,8 +49,8 @@
 - Preparar e organizar a apresentação dos resultados do projeto.
 - Criar slides e relatórios, e preparar uma demonstração da solução.
 
-**30 de outubro a 6 de novembro de 2024: Entrega e Feedback**
-- Apresentar a solução aos stakeholders e coletar feedback.
-- Realizar sessão de perguntas e respostas e coletar insights para futuras iterações.
+**30 de outubro a 6 de novembro de 2024: Entrega e Feedbacks**
+- Apresentar a solução aos e coletar feedbacks.
+- Realizar sessão de perguntas e respostas e coletar insights para futuras evoluções.
 
 Essa divisão é uma sugestão inicial e pode ser ajustada conforme o progresso do projeto.
