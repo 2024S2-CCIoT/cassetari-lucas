@@ -1,95 +1,56 @@
-# Planejamento do Projeto: Arquitetura Serverless para Processamento de Dados IoT em Ambientes Industriais
+# Arquitetura Serverless para Processamento de Dados IoT em Ambientes Industriais
 
-## Fase 1: Estudo de IoT e Arquitetura Serverless
+**7 a 14 de agosto de 2024: Definição do Projeto**
+- Refinar o tema e os objetivos do projeto.
+- Especificar claramente o escopo e as limitações.
 
-### 1.1. **Estudo de IoT**
-- **Descrição**: Compreender a arquitetura básica de sistemas IoT, seus componentes e protocolos de comunicação.
-- **Tópicos a Estudar**:
-  - Estrutura e funcionamento de dispositivos IoT.
-  - Protocolos comuns como MQTT e CoAP.
-  - Armazenamento e processamento de dados em IoT.
+**14 a 21 de agosto de 2024: Estudo de IoT**
+- Compreender a arquitetura básica de sistemas IoT, seus componentes e protocolos de comunicação.
+- Estudar a estrutura e funcionamento de dispositivos IoT.
+- Pesquisar sobre protocolos comuns como MQTT e CoAP.
 
-### 1.2. **O que é Serverless**
-- **Descrição**: Serverless é um modelo de computação em que o provedor de serviços gerencia a infraestrutura, permitindo que os desenvolvedores se concentrem no código e na lógica de aplicação. 
-- **Benefícios**:
-  - **Escalabilidade Automática**: Adaptação automática ao volume de trabalho.
-  - **Custo Eficiente**: Pagamento apenas pelo tempo de execução do código.
-  - **Menor Complexidade**: Redução na necessidade de gerenciar servidores e infraestrutura.
+**21 a 28 de agosto de 2024: Estudo de Arquitetura Serverless**
+- Compreender o conceito de serverless e suas aplicações.
+- Analisar os benefícios, como escalabilidade automática e custo eficiente.
 
-## Fase 2: Identificação de Problemas e Oportunidades
+**28 de agosto a 4 de setembro de 2024: Identificação de Problemas e Oportunidades**
+- Analisar desafios enfrentados por soluções tradicionais em ambientes industriais que podem ser resolvidos com uma arquitetura serverless.
+- Identificar problemas relacionados à escalabilidade, custo de infraestrutura e complexidade operacional.
+  
+**4 a 11 de setembro de 2024: Oportunidades para Serverless**
+- Explorar como a arquitetura serverless pode oferecer soluções para os problemas mencionados.
+- Identificar oportunidades de automatização de processos e redução de custos.
 
-### 2.1. **Problemas em IoT Industrial**
-- **Descrição**: Analisar desafios enfrentados por soluções tradicionais em ambientes industriais que podem ser resolvidos com uma arquitetura serverless.
-- **Possíveis Problemas**:
-  - **Escalabilidade**: Dificuldades em lidar com grandes volumes de dados em tempo real.
-  - **Custo de Infraestrutura**: Altos custos com servidores e manutenção.
-  - **Complexidade Operacional**: Necessidade de gerenciamento contínuo de recursos e servidores.
+**11 a 18 de setembro de 2024: Planejamento da Solução**
+- Desenvolver um plano detalhado para a solução serverless que integrará os dados de IoT.
+- Definir os serviços serverless que serão utilizados e como os dados serão coletados e processados.
 
-### 2.2. **Oportunidades para Serverless**
-- **Descrição**: Identificar como a arquitetura serverless pode oferecer soluções para os problemas mencionados.
-- **Possíveis Oportunidades**:
-  - **Automatização de Processos**: Simplificação da gestão de eventos e dados.
-  - **Redução de Custos**: Menor necessidade de recursos dedicados e manutenção.
-  - **Flexibilidade e Escalabilidade**: Adaptação rápida às demandas do ambiente industrial.
+**18 a 25 de setembro de 2024: Desenvolvimento de Protótipos**
+- Começar a desenvolver protótipos iniciais para validar a arquitetura proposta.
+- Implementar funções serverless básicas e configurar eventos e triggers.
 
-## Fase 3: Planejamento da Solução
+**25 de setembro a 2 de outubro de 2024: Desenvolvimento Completo**
+- Implementar a solução completa conforme o planejamento.
+- Codificar e integrar todos os componentes, configurar o ambiente de produção.
 
-### 3.1. **Desenvolvimento da Arquitetura**
-- **Descrição**: Criar um plano detalhado para a solução serverless que integrará os dados de IoT.
-- **Componentes**:
-  - **Serviços Serverless**: Definir quais serviços serão utilizados (por exemplo, AWS Lambda, Azure Functions).
-  - **Integração com IoT**: Como os dados serão coletados e processados.
-  - **Segurança e Conformidade**: Estratégias para garantir proteção e conformidade.
+**2 a 9 de outubro de 2024: Testes Unitários e de Integração**
+- Realizar testes para garantir que cada componente funcione corretamente.
+- Verificar o comportamento das funções isoladamente e garantir que os dados de IoT sejam processados corretamente.
 
-### 3.2. **Desenvolvimento de Protótipos**
-- **Descrição**: Desenvolver protótipos iniciais para validar a arquitetura proposta.
-- **Tarefas**:
-  - **Desenvolvimento de Funções Serverless**: Implementar funções básicas.
-  - **Configuração de Eventos e Triggers**: Configurar como os eventos de IoT acionam as funções serverless.
+**9 a 16 de outubro de 2024: Testes em Ambiente Real**
+- Implementar a solução em um ambiente industrial real para testar sua eficácia.
+- Monitorar a performance e realizar ajustes conforme necessário.
 
-## Fase 4: Início do Desenvolvimento
+**16 a 23 de outubro de 2024: Documentação**
+- Criar documentação detalhada sobre a solução desenvolvida.
+- Incluir informações sobre arquitetura, configuração e uso, além de manuais de usuário.
 
-### 4.1. **Desenvolvimento Completo**
-- **Descrição**: Implementar a solução completa conforme o planejamento.
-- **Tarefas**:
-  - **Codificação e Integração**: Implementar e integrar todos os componentes.
-  - **Configuração de Ambiente**: Configurar o ambiente de produção e garantir que todos os serviços estejam funcionando corretamente.
+**23 a 30 de outubro de 2024: Preparação da Apresentação**
+- Preparar e organizar a apresentação dos resultados do projeto.
+- Criar slides e relatórios, e preparar uma demonstração da solução.
 
-### 4.2. **Testes Unitários e de Integração**
-- **Descrição**: Realizar testes para garantir que cada componente funcione corretamente e que a solução integrada seja eficaz.
-- **Tarefas**:
-  - **Testes de Funções Serverless**: Verificar o comportamento das funções isoladamente.
-  - **Testes de Fluxo de Dados**: Garantir que os dados de IoT sejam processados corretamente.
+**30 de outubro a 6 de novembro de 2024: Entrega e Feedback**
+- Apresentar a solução aos stakeholders e coletar feedback.
+- Realizar sessão de perguntas e respostas e coletar insights para futuras iterações.
 
-## Fase 5: Testes da Solução
-
-### 5.1. **Testes em Ambiente Real**
-- **Descrição**: Implementar a solução em um ambiente industrial real para testar sua eficácia.
-- **Tarefas**:
-  - **Monitoramento e Ajustes**: Monitorar a performance e realizar ajustes conforme necessário.
-  - **Validação de Resultados**: Certificar-se de que a solução atende às expectativas e resolve os problemas identificados.
-
-### 5.2. **Documentação**
-- **Descrição**: Criar documentação detalhada sobre a solução desenvolvida.
-- **Tarefas**:
-  - **Documentação Técnica**: Incluir informações sobre arquitetura, configuração e uso.
-  - **Manuais de Usuário**: Criar guias para usuários finais e administradores.
-
-## Fase 6: Apresentação
-
-### 6.1. **Preparação da Apresentação**
-- **Descrição**: Preparar e organizar a apresentação dos resultados do projeto.
-- **Tarefas**:
-  - **Criação de Slides e Relatórios**: Preparar materiais visuais e relatórios para a apresentação.
-  - **Demonstração da Solução**: Mostrar a solução em funcionamento e discutir os resultados.
-
-### 6.2. **Entrega e Feedback**
-- **Descrição**: Apresentar a solução aos stakeholders e coletar feedback.
-- **Tarefas**:
-  - **Sessão de Perguntas e Respostas**: Responder a perguntas e discutir possíveis melhorias.
-  - **Coleta de Feedback**: Obter insights e sugestões para futuras iterações.
-
----
-
-**Nota**: Este planejamento é um guia inicial e pode ser ajustado conforme o progresso do projeto e novas descobertas.
-
+Essa divisão é uma sugestão inicial e pode ser ajustada conforme o progresso do projeto.
