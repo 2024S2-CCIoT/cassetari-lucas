@@ -1,56 +1,34 @@
-# Arquitetura Serverless para Processamento de Dados IoT em Ambientes Industriais
+# **Monitoramento de Temperatura de Máquinas Industriais - POC**
 
-**7 a 14 de agosto de 2024: Definição do Projeto**
-- Refinar o tema e os objetivos do projeto.
-- Especificar claramente o escopo e as limitações.
+## **Descrição do Projeto**
+Este projeto de prova de conceito (POC) tem como objetivo implementar uma arquitetura serverless para o monitoramento de temperatura de máquinas industriais em tempo real, utilizando dispositivos IoT para coletar e enviar dados de temperatura para a nuvem. O sistema processa e armazena os dados recebidos e dispara alertas automaticamente caso a temperatura exceda um limite predefinido, garantindo uma resposta rápida em caso de anomalias.
 
-**14 a 21 de agosto de 2024: Estudo de IoT**
-- Compreender a arquitetura básica de sistemas IoT, seus componentes e protocolos de comunicação.
-- Estudar a estrutura e funcionamento de dispositivos IoT.
-- Pesquisar sobre protocolos comuns como MQTT e CoAP.
+O projeto é simples e eficiente, utilizando tecnologias da AWS para garantir escalabilidade e baixo custo, permitindo o processamento de grandes volumes de dados IoT sem a necessidade de manter infraestrutura física.
 
-**21 a 28 de agosto de 2024: Estudo de Arquitetura Serverless**
-- Compreender o conceito de serverless e suas aplicações.
-- Analisar os benefícios, como escalabilidade automática e custo eficiente.
+---
 
-**28 de agosto a 4 de setembro de 2024: Identificação de Problemas e Oportunidades**
-- Analisar desafios enfrentados por soluções tradicionais em ambientes industriais que podem ser resolvidos com uma arquitetura serverless.
-- Identificar problemas relacionados à escalabilidade, custo de infraestrutura e complexidade operacional.
-  
-**4 a 11 de setembro de 2024: Oportunidades para Serverless**
-- Explorar como a arquitetura serverless pode oferecer soluções para os problemas mencionados.
-- Identificar oportunidades de automatização de processos e redução de custos.
+## **Tecnologias Utilizadas**
 
-**11 a 18 de setembro de 2024: Planejamento da Solução**
-- Desenvolver um plano detalhado para a solução serverless que integrará os dados de IoT.
-- Definir os serviços serverless que serão utilizados e como os dados serão coletados e processados.
+### **1. AWS IoT Core**
+O **AWS IoT Core** é utilizado para conectar e gerenciar dispositivos IoT. Ele permite que os dispositivos enviem dados para a nuvem de forma segura, usando o protocolo **MQTT** para comunicação eficiente e em tempo real. No projeto, o AWS IoT Core recebe os dados de temperatura dos sensores e os encaminha para processamento.
 
-**18 a 25 de setembro de 2024: Desenvolvimento de Protótipos**
-- Começar a desenvolver protótipos iniciais para validar a arquitetura proposta.
-- Implementar funções serverless básicas e configurar eventos e triggers.
+### **2. AWS Lambda**
+O **AWS Lambda** é um serviço de computação serverless que executa código em resposta a eventos. Na POC, uma função Lambda é acionada automaticamente pelo AWS IoT Core sempre que uma nova leitura de temperatura é enviada. A função Lambda processa os dados, armazena-os no banco de dados e verifica se a temperatura ultrapassa o limite configurado.
 
-**25 de setembro a 2 de outubro de 2024: Desenvolvimento Completo**
-- Implementar a solução completa conforme o planejamento.
-- Codificar e integrar todos os componentes, configurar o ambiente de produção.
+### **3. Amazon DynamoDB**
+O **Amazon DynamoDB** é um banco de dados NoSQL gerenciado, altamente escalável e de baixa latência, utilizado para armazenar as leituras de temperatura enviadas pelos dispositivos IoT. Cada leitura é registrada com o ID da máquina, o timestamp da leitura, e a temperatura medida, criando um histórico para monitoramento.
 
-**2 a 9 de outubro de 2024: Testes Unitários e de Integração**
-- Realizar testes para garantir que cada componente funcione corretamente.
-- Verificar o comportamento das funções isoladamente e garantir que os dados de IoT sejam processados corretamente.
+### **4. Amazon SNS (Simple Notification Service)**
+O **Amazon SNS** é um serviço de notificação que facilita o envio de alertas via diferentes canais, como e-mail, SMS ou notificações push. Na POC, o SNS é acionado pela função Lambda para enviar alertas sempre que a temperatura de uma máquina ultrapassar o limite definido, garantindo que os responsáveis sejam notificados imediatamente.
 
-**9 a 16 de outubro de 2024: Testes em Ambiente Real**
-- Implementar a solução em um ambiente industrial real para testar sua eficácia.
-- Monitorar a performance e realizar ajustes conforme necessário.
+---
 
-**16 a 23 de outubro de 2024: Documentação**
-- Criar documentação detalhada sobre a solução desenvolvida.
-- Incluir informações sobre arquitetura, configuração e uso, além de manuais de usuário.
+## **Objetivo Conceitual do Projeto**
 
-**23 a 30 de outubro de 2024: Preparação da Apresentação**
-- Preparar e organizar a apresentação dos resultados do projeto.
-- Criar slides e relatórios, e preparar uma demonstração da solução.
+O conceito central desta POC é demonstrar como uma arquitetura **serverless** pode ser aplicada em cenários industriais para monitoramento de dados IoT em tempo real, sem a necessidade de gerenciar servidores ou infraestrutura física. O projeto visa ilustrar como os dados de sensores de máquinas podem ser facilmente processados, armazenados e analisados usando serviços da AWS, além de como gerar alertas automatizados para garantir a segurança e o controle em ambientes industriais.
 
-**30 de outubro a 6 de novembro de 2024: Entrega e Feedbacks**
-- Apresentar a solução aos e coletar feedbacks.
-- Realizar sessão de perguntas e respostas e coletar insights para futuras evoluções.
+Esse tipo de solução é altamente escalável, fácil de implementar e pode ser adaptado para diversos outros cenários de IoT, onde o monitoramento em tempo real e a resposta rápida a eventos são críticos para o sucesso da operação.
 
-Essa divisão é uma sugestão inicial e pode ser ajustada conforme o progresso do projeto.
+---
+
+Este projeto serve como um exemplo prático da utilização de tecnologias modernas de nuvem para resolver problemas reais em ambientes industriais, demonstrando o poder e a flexibilidade da **Arquitetura Serverless**.
